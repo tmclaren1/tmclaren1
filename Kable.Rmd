@@ -1,0 +1,63 @@
+---
+title: "Untitled"
+author: "Tommy McLaren"
+date: "2/12/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r}
+webshot::install_phantomjs()
+kable(clnu_table)
+
+#colnames(MCDS.det) <- c("Month", "$\\text{Detectability}(\\hat{P}$)")
+colnames(MCDS.det) <- c("Month", "Detectabiliy")
+kable(MCDS.det)
+
+kable(MCDS.det, caption = "Detectability estimates by survey month") %>%
+   kable_paper(c("striped", "hover"), full_width = F)%>%
+  save_kable(file = "table4.png")
+
+
+glm.table1<-cbind(conifer_species,glm.estimates$Estimate,glm.estimates$`2.5 %`,glm.estimates$`97.5 %`)
+glm.table1$Estimate<-signif(glm.estimates$Estimate,2)
+
+kable(pred.tab, caption = "Predictions of nutcracker density by conifer forest type") %>%
+   kable_paper(c("striped", "hover"), full_width = F)%>%
+  save_kable(file = "pred.table4.png")
+
+colnames(MCDStable) <- c( "Shape", "Formula", "Chi squared", "Detectability (P)", "SE (P)", "Delta AIC")
+
+MCDStable <- subset (MCDStable, select = -c(Model))
+
+kable(MCDStable, caption = "Distance analysis model selection")%>%
+ kable_paper(c("striped","hover"), full_width = F)%>%
+  save_kable(file = "MCDS_model_table2.png")
+
+kable(glm.results <- aictab(glm.list,modnames=glm.names))%>%
+  kable_paper(c("striped","hover"), full_width = F)%>%
+  save_kable(file = "count_model_table.png")
+```

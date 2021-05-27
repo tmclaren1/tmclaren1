@@ -1,0 +1,66 @@
+Date,Forest_Type,Birds,Total_Cones,Site,month,Month,Year
+8/10/2019,PIAL,8,31,Avalanche Peak,July-August,8,2019
+9/7/2019,PIAL,27,31,Avalanche Peak,September,9,2019
+10/13/2019,PIAL,0,151,DeLacy South,October,10,2019
+8/5/2019,PIAL,10,151,DeLacy South,July-August,8,2019
+9/7/2019,PIAL,11,151,DeLacy South,September,9,2019
+9/8/2019,PIAL,46,3,Dunraven,September,9,2019
+8/3/2019,PIAL,9,3,Dunraven,July-August,8,2019
+9/9/2019,PICO,1,49,Canyon,September,9,2019
+10/11/2019,PICO,0,49,Canyon,October,10,2019
+8/6/2019,PICO,2,49,Canyon,July-August,8,2019
+10/13/2019,PICO,0,73,DeLacy North,October,10,2019
+9/7/2019,PICO,3,73,DeLacy North,September,9,2019
+8/11/2019,PICO,2,73,DeLacy North,July-August,8,2019
+10/11/2019,PIFL,0,9,Mammoth,October,10,2019
+8/7/2019,PIFL,5,9,Mammoth,July-August,8,2019
+9/8/2019,PIFL,9,9,Mammoth,September,9,2019
+10/12/2019,PSME,3,37,Bear Jam,October,10,2019
+7/29/2019,PSME,1,37,Bear Jam,July-August,8,2019
+9/6/2019,PSME,5,37,Bear Jam,September,9,2019
+10/12/2019,PSME,14,155,Trout Lake,October,10,2019
+7/30/2019,PSME,0,155,Trout Lake,July-August,8,2019
+9/8/2019,PSME,1,155,Trout Lake,September,9,2019
+7/27/2020,PICO,4,120,Canyon,July-August,8,2020
+7/28/2020,PIFL,4,775,Mammoth,July-August,8,2020
+7/28/2020,PSME,8,172,Bear Jam,July-August,8,2020
+7/29/2020,PIAL,23,101,DeLacy South,July-August,8,2020
+7/29/2020,PICO,16,119,DeLacy North,July-August,8,2020
+7/30/2020,PIEN,6,872,Baronette,July-August,8,2020
+7/30/2020,PIFL,2,3243,Confluence,July-August,8,2020
+7/31/2020,PIEN,4,1189,West Thumb,July-August,8,2020
+8/1/2020,PIAL,15,324,Dunraven,July-August,8,2020
+8/1/2020,PICO,2,120,Canyon,July-August,8,2020
+8/2/2020,PSME,10,172,Bear Jam,July-August,8,2020
+8/3/2020,PSME,0,1979,Trout Lake,July-August,8,2020
+8/4/2020,PIFL,9,3243,Confluence,July-August,8,2020
+8/4/2020,PIEN,2,872,Baronette,July-August,8,2020
+8/5/2020,PIAL,18,186,Avalanche Peak,July-August,8,2020
+8/6/2020,PIEN,5,1189,West Thumb,July-August,8,2020
+8/7/2020,PICO,6,119,DeLacy North,July-August,8,2020
+8/7/2020,PIAL,19,101,DeLacy South,July-August,8,2020
+8/8/2020,PIAL,16,186,Avalanche Peak,July-August,8,2020
+8/9/2020,PIAL,20,324,Dunraven,July-August,8,2020
+8/10/2020,PSME,9,1979,Trout Lake,July-August,8,2020
+8/10/2020,PIFL,3,775,Mammoth,July-August,8,2020
+9/11/2020,PIFL,5,775,Mammoth,September,9,2020
+9/10/2020,PIEN,3,1189,West Thumb,September,9,2020
+9/10/2020,PIAL,6,186,Avalanche Peak,September,9,2020
+9/10/2020,PIAL,26,324,Dunraven,September,9,2020
+9/9/2020,PIAL,4,101,DeLacy South,September,9,2020
+9/9/2020,PICO,6,119,DeLacy North,September,9,2020
+9/8/2020,PSME,1,1979,Trout Lake,September,9,2020
+9/8/2020,PICO,9,120,Canyon,September,9,2020
+9/7/2020,PSME,10,172,Bear Jam,September,9,2020
+9/6/2020,PIEN,1,872,Baronette,September,9,2020
+9/6/2020,PIFL,27,3243,Confluence,September,9,2020
+10/7/2020,PICO,1,119,DeLacy North,October,10,2020
+10/7/2020,PIAL,4,101,DeLacy South,October,10,2020
+10/10/2020,PSME,4,172,Bear Jam,October,10,2020
+10/8/2020,PIFL,11,775,Mammoth,October,10,2020
+10/8/2020,PIFL,2,3243,Confluence,October,10,2020
+10/8/2020,PIEN,8,872,Baronette,October,10,2020
+10/7/2020,PSME,6,1979,Trout Lake,October,10,2020
+10/9/2020,PIAL,40,324,Dunraven,October,10,2020
+10/10/2020,PIEN,2,1189,West Thumb,October,10,2020
+10/10/2020,PICO,2,120,Canyon,October,10,2020

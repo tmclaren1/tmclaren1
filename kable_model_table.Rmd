@@ -1,0 +1,108 @@
+---
+title: "Untitled"
+author: "Tommy McLaren"
+date: "4/3/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(kableExtra)
+library(AICcmodavg)
+library(broom)
+library(dplyr)
+library(ggplot2)
+library(readr)
+library(sm)
+library(tidyr)
+library(knitr)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+tab_07 = data.frame(glm.results) %>%
+  select(
+    Modnames, LL, K, AICc, Delta_AICc, AICcWt
+  ) %>%
+  rename(
+    Hypothesis = Modnames,
+    # We can include LaTeX math notation in column names
+    # Because \ is a special character we need two \\
+    'Delta AICc' = Delta_AICc,
+    'AIC Wt.' = AICcWt)
+tab_07
+kable(tab_07,
+      caption = "Table of Model Evidence for Habitat Use Hypotheses",
+      digits = 2, align= "llccccc", full_width = F )%>%
+  kable_styling()%>%
+  save_kable(file = "5_min model table1.png")
+      
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+MCDStable%>%
+  rename(
+    `$\chi^2$ $p$-value` = "X2 P-value",
+    `$\hat{P_a}$` = "Detectability {p-hat}"
+    `se($\hat{P_a}$)` = "SE detectability",
+    `$\Delta$AIC` = "Delta AICc"
+    
+  )
+
+
+kable(summary(gdist13nb),
+      digits = 2, full_width = T )%>%
+  kable_styling()%>%
+  save_kable(file = "gdist.png")
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r}
+
+kable(summary(gdist13nb),
+      digits = 2, full_width = T )%>%
+  kable_styling()%>%
+  save_kable(file = "gdist.png")
+
+kable(summary(gdist13nb),
+      digits = 2, full_width = T )%>%
+  kable_paper()%>%
+  save_kable(file = "gdist1.png")
+
+kable(summary(gdist13nb),
+      digits = 2, full_width = T )%>%
+  kable_paper()%>%
+  save_kable(file = "gdist2.png")
+
+
+```
+
+
+```{r}
+
+kable(summary(HDSnb.haz5),
+      digits = 2, full_width = T )%>%
+  kable_paper()%>%
+  save_kable(file = "HDSnb5.png")
+
+kable(summary(HDSnb.haz18),
+      digits = 2, full_width = T )%>%
+  kable_paper()%>%
+  save_kable(file = "HDSnb18.png")
+
+kable(summary(HDSnb.haz18),
+      digits = 4, full_width = T )%>%
+  kable_paper()%>%
+  save_kable(file = "HDShaz18.png")
+```
